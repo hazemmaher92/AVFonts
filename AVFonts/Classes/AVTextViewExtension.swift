@@ -13,11 +13,11 @@ import UIKit
 
 extension UITextView{
     
-    public func customFontLayoutSubviews(){
+    @objc public func customFontLayoutSubviews(){
         self.customFontLayoutSubviews()
    
         
-        if(AVFonts.changeFontThroughOut.characters.count  > 1){
+        if(AVFonts.changeFontThroughOut.count  > 1){
             if(self.font?.fontName != AVFonts.changeFontThroughOut){
                 if(AVFonts.changeFontThroughOutTypes.contains(.textview)){
                     
